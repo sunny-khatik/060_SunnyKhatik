@@ -32,13 +32,13 @@ print("Outlook, Temp, Wind, Humidity\n\n")
 for pair in combined_features:
     print(pair)
 
-# Train Test Division : 90%-10% & Roll No. = 61
+# Train Test Division : 90%-10% & Roll No. = 60
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, Y_train, Y_test = train_test_split(combined_features,
                                                     main_data["Class"],
                                                     test_size=0.10,
-                                                    random_state=61)
+                                                    random_state=60)
 
 # create model
 model = MultinomialNB()
